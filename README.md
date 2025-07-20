@@ -1,36 +1,56 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Prompt Recommendation Engine
+
+This is a Next.js project that provides an AI-powered prompt recommendation engine based on OpenAI API.
+
+## Approach
+
+- The recommendation engine takes your input prompt and uses OpenAI's API to generate optimized prompt suggestions.
+- It scores and ranks these prompts based on relevance, search volume estimation, and buyer intent.
+- The app is built using Next.js (app router), React components, and integrates with OpenAI's API for generation.
+
+## Trade-offs and Stubs
+
+- For demonstration, some features like search volume and buyer intent scores are stubbed or simplified.
+- The app currently focuses on the core recommendation flow and UI; advanced filtering or user profiles are future work.
+- API keys and environment variables are required and should be set in `.env.local`.
 
 ## Getting Started
 
-First, run the development server:
+First, install dependencies and run the development server:
 
 ```bash
+npm install
 npm run dev
 # or
+yarn
 yarn dev
 # or
+pnpm install
 pnpm dev
 # or
+bun install
 bun dev
-```
+Open http://localhost:3000 in your browser to see the app.
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+You can start editing the main page by modifying app/page.tsx. The page reloads automatically on changes.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+Tech Stack
+Next.js (React + Server Components)
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+Tailwind CSS for styling
 
-## Learn More
+OpenAI API for prompt optimization
 
-To learn more about Next.js, take a look at the following resources:
+Custom UI components in components/ui
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+Learn More
+Next.js Documentation
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+Learn Next.js
 
-## Deploy on Vercel
+OpenAI API docs
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+Deployment
+The easiest way to deploy this app is using Vercel.
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+See Next.js deployment documentation for details.
